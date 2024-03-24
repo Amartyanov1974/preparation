@@ -2,8 +2,9 @@ version: '3.8'
 services:
   bot:
     container_name: bot
-    build: ./app
+    build:
+      context: ./
     restart: unless-stopped
     env_file:
       - .env
-    command: sh -c "python tg_bot.py"
+    command: sh -c "poetry run python ./app/tg_bot.py"

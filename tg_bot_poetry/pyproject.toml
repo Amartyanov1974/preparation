@@ -1,17 +1,16 @@
 [tool.poetry]
 name = "tg-bot"
 version = "0.1.0"
-description = "Бот с пагинациней"
+description = "Пример бота с пагинацией списка"
 authors = ["Александр Мартьянов <randomquake@yandex.ru>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "tg_bot"}]
+packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 python-telegram-bot = "13.15"
 environs = "10.3.0"
-
 
 [build-system]
 requires = ["poetry-core"]
